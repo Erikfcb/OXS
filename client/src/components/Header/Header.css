@@ -1,0 +1,20 @@
+.header {
+  width: 80vw;
+  margin: 2vh auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  margin: 0 10px !important;
+  padding-top: 4px;
+}
+
+.search {
+  display: flex;
+  margin-left: -3.5vw;
+}
+
+#search {
+  width: 50vw !important;
+}

@@ -1,0 +1,30 @@
+.closeWindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: rgb(182, 182, 182);
+  color: white;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  outline: none;
+}
+
+.closeWindow:hover {
+  cursor: pointer;
+  background-color: rgb(145, 145, 145);
+}
+
+.updateTenantWindow {
+  position: absolute;
+  left: 35vw;
+  top: 10vh;
+  background-color: rgba(220, 255, 220, 0.94);
+  border-radius: 10px;
+  transition: 0.6s;
+  overflow: hidden;
+}

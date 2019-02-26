@@ -1,0 +1,8 @@
+.centeredRounded {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;  
+  padding: 8px 10px !important;
+}
+
