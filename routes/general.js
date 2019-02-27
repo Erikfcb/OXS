@@ -8,7 +8,7 @@ const auth = require("../middlewares/auth");
 const crypto = require("crypto");
 const db = require("../models");
 
-router.use(auth.tokenMiddleware); // check admins token
+router.use(auth.tokenMiddleware); // Check admins token, find admin and set it as req.admin
 
 // Fetch tenants
 // returns array of tenants
@@ -17,7 +17,7 @@ router.get("/api/tenants", (req, res) => {
 });
 
 // Create new tenant
-// Receives admin ID, tenant's name and debt. Creates new tenant and returns a new array of tenants with the new item
+// Receives tenant's information. Creates new tenant and returns a new array of tenants with the new item
 router.post("/api/create", async (req, res) => {
   try {
     const item = await Tenant.create(req.body);
